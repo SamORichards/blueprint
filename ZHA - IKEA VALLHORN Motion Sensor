@@ -23,13 +23,11 @@ blueprint:
           multiple: false
     light_target:
       name: Light Target
-      description: Light or switch to control.
+      description: Lights to control (can target an area or multiple lights).
       selector:
         target:
           entity:
-            domain: 
-              - light
-              - switch
+            domain: light
     use_luminance_sensor:
       name: Use Illuminance Sensor
       description: Enable illuminance-based control.
